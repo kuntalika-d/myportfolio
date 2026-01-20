@@ -2,243 +2,261 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kuntalika Debnath Project</title>
-  <!--styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <!-- scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <title>Mutezic</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav >
-    <button id="menu-toggle">☰</button>
-    <ul id="menu" class="hidden">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <a href="#home" class="skip-link">
-    <img src="resources/images/LOGO.png" alt="Logo" class="logo"/>
-  </a>
-  <!-- Top Section -->
-  <section id="home" class="hero">
-    <section class="card-stack">
-      <div class="stack-card">
-        <img src="resources/images/real_diva_small.jpg" alt="The Diva in Me" class="card-image" />
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>Mutezic</h1>
+      <p>Feel the Music</p>
+    </div>
+
+    <nav class="nav">
+      <a class="active" data-page="home">
+        <span>🏠</span> Home
+      </a>
+      <a data-page="upload"><span>⬆️</span> Upload</a>
+      <a><span>📚</span> My Tactile Library</a>
+      <a><span>🎵</span> Playlists</a>
+      <a><span>🔊</span> Device Connection</a>
+      <a><span>⚙️</span> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Top Bar -->
+    <header class="topbar">
+      <input placeholder="Search tactile patterns, artists..." />
+
+      <div class="top-actions">
+        <div class="device">🔇 No Device</div>
+        <div class="avatar">👤</div>
       </div>
-      <div class="stack-card">
-        <img src="resources/images/creative.jpg" alt="The Diva in Me" class="card-image" />
+    </header>
+
+    <!-- ================= HOME ================= -->
+<section id="home" class="page visible">
+  <!-- Recently Played -->
+    <section>
+      <div class="section-header">
+        <h2>Recently Played</h2>
+        <span class="see-all">See All →</span>
       </div>
-      <div class="stack-card">
-        <img src="resources/images/pets and plants.jpg" alt="The Diva in Me" class="card-image" />
+
+      <div class="cards">
+
+        <!-- Card -->
+        <div class="card">
+          <img src="resources/images/bohemian-rhapsody.jpeg" alt="Bohemian Rhapsody artwork" />
+          <h3>Bohemian Rhapsody</h3>
+          <p>Queen</p>
+
+          <div class="meta">
+            <span class="tag intense">Intense</span>
+            <span>5:55</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="resources/images/weightless.jpeg" alt="Weightless artwork" />
+          <h3>Weightless</h3>
+          <p>Marconi Union</p>
+
+          <div class="meta">
+            <span class="tag slow">Slow</span>
+            <span>8:09</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="resources/images/uptown-funk.jpeg" alt="Uptown Funk artwork" />
+          <h3>Uptown Funk</h3>
+          <p>Bruno Mars</p>
+
+          <div class="meta">
+            <span class="tag rhythm">Rhythmic</span>
+            <span>4:30</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="resources/images/claire-de-luna.jpeg" alt="Clair de Lune artwork" />
+          <h3>Clair de Lune</h3>
+          <p>Debussy</p>
+
+          <div class="meta">
+            <span class="tag slow">Slow</span>
+            <span>5:03</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
       </div>
     </section>
-    <br><br><br><br><br>
-    <h1 class="hero-title">Kuntalika Debnath</h1>
-    <p class="hero-subtitle">UI/UX Researcher and Designer</p>
+
+    <!-- My Converted Songs -->
+    <section>
+      <div class="section-header">
+        <h2>My Converted Songs</h2>
+        <span class="see-all">See All →</span>
+      </div>
+
+      <div class="cards">
+
+        <!-- Card -->
+        <div class="card">
+          <img src="assets/storm.jpg" />
+          <h3>Bohemian Rhapsody</h3>
+          <p>Queen</p>
+
+          <div class="meta">
+            <span class="tag intense">Intense</span>
+            <span>5:55</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/ocean.jpg" />
+          <h3>Weightless</h3>
+          <p>Marconi Union</p>
+
+          <div class="meta">
+            <span class="tag slow">Slow</span>
+            <span>8:09</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/desert.jpg" />
+          <h3>Uptown Funk</h3>
+          <p>Bruno Mars</p>
+
+          <div class="meta">
+            <span class="tag rhythm">Rhythmic</span>
+            <span>4:30</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/guitar.jpg" />
+          <h3>Clair de Lune</h3>
+          <p>Debussy</p>
+
+          <div class="meta">
+            <span class="tag slow">Slow</span>
+            <span>5:03</span>
+          </div>
+
+          <div class="actions">
+            <button>▶ Play</button>
+            <div class="send">✈️</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h1 class="about-h1">About</h1>
+    
 
-    <!-- Swiper Slider for About Section -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <span class="label">Design Philosophy:<br><br></span>
-          <div style="padding-left: 100px;">
-            <span style="font-size: 64px;">
-              <strong>Research,empathy</strong><br>
-                <strong>Inclusitivity and</strong><br>
-                <strong>Storytelling</strong>
-              </span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <span class="label">Core strength:<br><br></span>
-          <div style="padding-left: 100px;">
-            <span style="font-size: 64px;">
-              <strong>Research,analysis</strong><br>
-               <strong>problem solving and</strong><br>
-               <strong>Ideation</strong>
-             </span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <span class="label">Personality fun facts:<br><br></span>
-          <div style="padding-left: 100px;">
-            <span style="font-size: 64px;">
-              <strong>Quirky,extrovert</strong><br>
-               <strong>and workaholic</strong><br>
-             </span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <span class="label">What I am looking for?<br><br></span>
-          <div style="padding-left: 100px;">
-            <span style="font-size: 64px;">
-              <strong>Intership role</strong><br>
-               <strong>for UXR / UXD</strong><br>
-             </span>
-          </div>
-        </div>
-      </div>
-      <br><br>
-        <!-- Pagination (the "kebab" dots) -->
-      <div class="swiper-pagination"></div>
-     </div>
-     <div class="resume-button-wrapper">
-      <button id="resumeBtn" class="custom-button">Resume</button>
-    </div>    
-  </section>
-  <!-- My Stack Section -->
-  <section class="my-stack-section">
-    <h1 class="stack-title">My Stack</h1>
-    <div class="stack-container">
-      <div class="my-stack">
-        <img src="resources/images/css.png" alt="Stack 1" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/Figma_mystack.png" alt="Stack 2" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/ChatGPT.png" alt="Stack 3" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/HTML_mystck.png" alt="Stack 4" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/Illustrator_mystack.png" alt="Stack 5" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/Miro.png" alt="Stack 6" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/Webflow_mystack.png" alt="Stack 6" class="card-image" />
-      </div>
-      <div class="my-stack">
-        <img src="resources/images/Photoshop_mystack.png" alt="Stack 6" class="card-image" />
-      </div>
-    </div>
-  </section>
-  <section id="work" class="work-container"> 
-    <h1 class="about-h1">Work</h1>
-    <div class="cards-container">
-      <div class="cards-wrapper" id="cardsWrapper">
-      <!-- Card 1 -->
-      <div class="card" data-index="0">
-          <div class="card-image">
-              <img src="resources/images/card01.jpg" alt="Project 1">
-          </div>
-          <h3 class="card-title">Digi Pawket</h3>
-          <div class="card-content">
-              <div class="card-full-text">
-                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
-                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
-              </div>
-              <div class="card-actions">
-                  <a href="#" class="btn">Learn more</a>
-              </div>
-          </div>
-          
-          <div class="toggle-indicator">+</div>
-          <div class="close-btn"></div>
-      </div>
-      
-      <!-- Card 2 -->
-      <div class="card" data-index="1">
-          <div class="card-image">
-              <img src="resources/images/card02.jpg" alt="Project 2">
-          </div>
-          <h3 class="card-title">Asha Didi.AI</h3>
-          <div class="card-content">
-              <div class="card-full-text">
-                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
-                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
-              </div>
-              <div class="card-actions">
-                  <a href="#" class="btn">Learn more</a>
-              </div>
-          </div>
-          
-          <div class="toggle-indicator">+</div>
-          <div class="close-btn"></div>
-      </div>
-      
-      <!-- Card 3 -->
-      <div class="card" data-index="2">
-          <div class="card-image">
-              <img src="resources/images/card03.jpg" alt="Project 3">
-          </div>
-          <h3 class="card-title">The Design Loom</h3>
-          <div class="card-content">
-              <div class="card-full-text">
-                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
-                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
-              </div>
-              <div class="card-actions">
-                  <a href="#" class="btn">Learn more</a>
-              </div>
-          </div>
-          
-          <div class="toggle-indicator">+</div>
-          <div class="close-btn"></div>
-      </div>
-    </div>
-    </div>
-  </div>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-  <footer class="footer">
-  <div class="footer-container">
-    <h1 class="about-h1">Contact</h1>
-    <p>If you would like to get in touch, please reach out!</p>
-    <form class="footer-form" name="FooterForm" onsubmit="return validateFooterForm()" onreset="resetFooterErrors()">
-      <input type="text" id="footer-name" name="Name" placeholder="Your Name*" />
-      <span id="footer-name-error" class="error-message"></span>
+    <!-- ================= UPLOAD ================= -->
+    <section id="upload" class="page">
 
-      <input type="email" id="footer-email" name="Email" placeholder="Your Email*" />
-      <span id="footer-email-error" class="error-message"></span>
+      <h2>Upload & Convert</h2>
+      <p class="subtitle">Transform audio into vibrotactile patterns</p>
 
-      <textarea id="footer-message" name="Message" rows="3" placeholder="Your Message"></textarea>
+      <div class="upload-layout">
 
-      <input type="submit" value="Send" sty/>
-      <input type="reset" value="Reset" class="custom-button"/>
-    </form>
-  </div>
-</footer>
-</section>
-<!-- Footer Section -->
- <section class="footer-stack-section">
-  <div class="footer-info">
-      <section class="stack-container">
-        <div class="my-stack">
-          <a href="https://www.behance.net/kuntalidebnath" class="skip-link">
-            <img src="resources/images/Behance.png" alt="Github" class="card-image" />
-          </a>
+        <div class="dropzone">
+          <div class="upload-icon">⬆️</div>
+          <strong>Drop your audio file here</strong>
+          <span>or click to browse</span>
+          <button id="browseBtn">Browse Files</button>
+          <input type="file" id="fileInput" accept="audio/*" hidden>
         </div>
-        <div class="my-stack">
-          <a href="https://www.instagram.com/kuntalikalovestodraw/?hl=en" class="skip-link">
-            <img src="resources/images/Instagram Old.png" alt="Instagram" class="card-image" />
-          </a>
+
+        <div class="panel">
+          <h3>Frequency to Vibration Mapping</h3>
+
+          <div class="slider-group">
+            <label>Low Frequency <span id="lowVal">70%</span></label>
+            <input type="range" id="low" value="70">
+            <small>Bass vibration intensity</small>
+          </div>
+
+          <div class="slider-group">
+            <label>Mid Frequency <span id="midVal">50%</span></label>
+            <input type="range" id="mid" value="50">
+            <small>Vocal/melody intensity</small>
+          </div>
+
+          <div class="slider-group">
+            <label>High Frequency <span id="highVal">30%</span></label>
+            <input type="range" id="high" value="30">
+            <small>Treble/cymbal intensity</small>
+          </div>
+
+          <button class="convert" disabled id="convertBtn">Convert to Tactile</button>
+          <p class="hint">Upload an audio file to begin conversion</p>
         </div>
-        <div class="my-stack">
-          <a href="https://www.linkedin.com/in/kuntalika-debnath-23913863/" class="skip-link">
-            <img src="resources/images/LinkedIn.png" alt="LinkedIn" class="card-image" />
-          </a>
-        </div>  
-      </section>
-      <p style="font-size: 12px;">&copy; 2025 Kuntalika Debnath. All rights reserved.</p>
-    </div>
- </section>
+
+      </div>
+    <!-- Upload Info Footer -->
+      <div class="upload-footer">
+        <h4>How it works</h4>
+
+        <div class="steps">
+          <div><strong>1. Upload:</strong> Choose an audio file from your device</div>
+          <div><strong>2. Map:</strong> Adjust frequency bands to vibration intensity</div>
+          <div><strong>3. Convert:</strong> Transform audio into tactile patterns</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
